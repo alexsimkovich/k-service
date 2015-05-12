@@ -1,0 +1,138 @@
+/**
+* Tariff styles
+**/
+
+.tariff_ul {
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+
+  .tariff_li {
+    margin-bottom: 20px;
+
+    .tariff_box {
+      width: 100%;
+      padding-top: 30px;
+      border: 1px solid #d8dee4;
+      text-align: center;
+
+      .tariff_price {
+        position: relative;
+        color: @color-light;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: bold;
+
+        .currency {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 14px;
+          line-height: 14px;
+        }
+
+        span {
+          font-size: 14px;
+          line-height: 14px;
+          display: inline-block;
+        }
+      }
+
+      .tariff_type {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: @font-sans;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        color: @color-light;
+      }
+
+      .tariff_buy {
+        margin-bottom: 25px;
+
+        a {
+          display: inline-block;
+          padding: 7px 25px;
+          background-color: @color-light;
+          border-radius: 2px;
+          color: #fff;
+          font-size: 12px;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            outline: 0;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .tariff_info {
+        background-color: #e8edf2;
+
+        .tariff_info_txt {
+          padding: 20px 0;
+          margin: 0px 10px;
+          color: #333;
+          font-size: 14px;
+          line-height: 14px;
+          border-bottom: 2px solid #d8dee4;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .tariff_box {
+        border: 1px solid @color-primary;
+
+        .tariff_buy {
+          a {
+            background-color: @color-primary;
+          }
+        }
+
+        .tariff_info {
+          background-color: @color-primary;
+
+          .tariff_info_txt {
+            border-bottom: 2px solid #629bd7;
+            color: #fff;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      width: 100%;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .tariff_box {
+        padding: 0;
+
+        .tariff_price {
+          margin: 20px 0
+        }
+
+        .tariff_type {
+          margin: 0;
+        }
+
+        .tariff_buy {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

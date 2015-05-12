@@ -1,0 +1,27 @@
+/**
+* Header styles
+**/
+
+header {
+  margin-bottom: 71px;
+
+  .header-navigation {
+    padding: 20px 0;
+    box-shadow: 0 2px 3px rgba(225,225,225,.75);
+    background-color: #fff;
+    border-color: transparent;
+    min-height: 0;
+
+  }
+
+  &.inside {
+    .header-navigation {
+      padding: 20px 0;
+      background-color: @color-primary;
+      box-shadow: none;
+      border-color: transparent;
+      min-height: 0;
+
+    }
+  }
+}

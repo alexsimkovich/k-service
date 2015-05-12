@@ -1,0 +1,129 @@
+/**
+* Categories styles
+**/
+
+.category {
+
+  .category-block {
+
+    .category-block_select {
+      margin-bottom: 20px;
+      font-size: 18px;
+
+      a {
+        color: @color-default;
+        text-decoration: none;
+
+        i {
+          color: @color-primary;
+        }
+      }
+    }
+
+    .category-block_list {
+      margin-bottom: 60px;
+
+      .category-list_ul {
+        margin: 0;
+        list-style: none;
+
+        .category-list_li {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 21px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .category-toggle_btn {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-right: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #4b5a72;
+
+            a {
+              display: block;
+              color: #4b5a72;
+            }
+          }
+
+          .category_n {
+            display: inline-block;
+            width: calc(~'100% - 80px');
+
+            a {
+              font-size: 14px;
+              color: @color-default;
+              text-decoration: none;
+            }
+          }
+
+          .subcategory-block {
+            display: none;
+            width: calc(~'100% - 80px');
+            line-height: 24px;
+            margin-left: 74px;
+            color: @color-light;
+          }
+
+          &:before,
+          &:after {
+            position: absolute;
+            display: block;
+            content: "";
+            height: 100%;
+            width: 0px;
+            top: 2px;
+            left: 39px;
+            z-index: 1;
+            border: 1px dashed #d8d8d8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .category {
+    .category-block {
+      .category-block_list {
+        .category-list_ul {
+          .category-list_li {
+            &:last-child {
+              margin-bottom: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .category {
+    .category-block {
+      .category-block_list {
+        .category-list_ul {
+          .category-list_li {
+            &:last-child {
+              margin-bottom: 21px;
+            }
+          }
+        }
+      }
+
+      .category-block_select {
+        text-align: center;
+      }
+    }
+  }
+}

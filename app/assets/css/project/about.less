@@ -1,0 +1,99 @@
+/**
+* About styles
+**/
+
+.about {
+  padding: 75px 0 45px 0;
+
+  .about-block {
+    text-align: center;
+
+    .about-box {
+      padding-bottom: 25px;
+
+
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: @color-primary;
+      }
+      
+      .about-box_icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px auto;
+        line-height: 100px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 1px @color-primary;
+        transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+
+        &.__users {
+          background: url(../../../assets/images/icons/user_b.png) center center no-repeat;
+        }
+
+        &.__categories {
+          background: url(../../../assets/images/icons/categories_b.png) center center no-repeat;
+        }
+
+        &.__search {
+          background: url(../../../assets/images/icons/search_b.png) center center no-repeat;
+        }
+      }
+    }
+
+    .about-block_t {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 20px;
+      color: @color-default;
+    }
+
+    .about-block_desc {
+      font-size: 14px;
+      line-height: 24px;
+      color: @color-light;
+    }
+
+    &:hover {
+      .about-box_icon {
+        &.__users {
+          background: @color-primary url(../../../assets/images/icons/user_w.png) center center no-repeat;
+        }
+
+        &.__categories {
+          background: @color-primary url(../../../assets/images/icons/categories_w.png) center center no-repeat;
+        }
+
+        &.__search {
+          background: @color-primary url(../../../assets/images/icons/search_w.png) center center no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+    padding: 25px 0;
+
+    .about-block {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 25px 0;
+
+    .about-block {
+      margin-bottom: 25px;
+    }
+  }
+}

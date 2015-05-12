@@ -1,0 +1,42 @@
+/**
+* Table styles
+**/
+
+.pc-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    border-top: 1px dotted #ccc;
+
+    th {
+      font-weight: 300;
+      padding: 12px 15px;
+      background-color: #f5f5f5;
+
+      a {
+        color: @color-primary;
+      }
+    }
+
+    td {
+      color: @color-default;
+      padding: 12px 15px;
+      border-bottom: 1px dotted #ccc;
+
+      a {
+        color: #6d7580;
+
+        &:hover,
+        &:focus {
+          outline: 0;
+          color: @color-primary;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px dotted #ccc;
+    }
+  }
+}

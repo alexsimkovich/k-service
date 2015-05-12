@@ -1,0 +1,67 @@
+/**
+* Banner styles
+**/
+
+.banner {
+  padding: 130px 0 85px 0;
+  background: url(../../../assets/images/banner/banner-welcome.jpg) no-repeat;
+  background-size: cover;
+
+  .banner-info {
+    float: right;
+    width: 500px;
+    
+    .banner-info_slogan1 {
+      font-size: 24px;
+      color: @color-primary;
+      margin-bottom: 15px;
+    }
+
+    .banner-info_slogan2 {
+      font-size: 30px;
+      color: #26262c;
+      margin-bottom: 15px;
+    }
+
+    .banner-info_slogan3 {
+      font-size: 24px;
+      color: #26262c;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+
+    .banner-info_reg {
+      margin-bottom: 10px;
+    }
+
+    .banner-info_slogan4 {
+      font-size: 14px;
+      color: #26262c;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .banner {
+    background-position: 50% 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    background-position: 60% 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}

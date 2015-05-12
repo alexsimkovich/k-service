@@ -1,0 +1,85 @@
+/**
+* Controls restyling
+**/
+
+.form-control-default {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 1px;
+  border: 1px solid #d8dee4;
+}
+
+.form-control {
+  border-radius: 1px;
+  box-shadow: none;
+  font-size: 12px;
+  border-color: #d8dee4;
+}
+
+.form-control-group {
+  position: relative;
+
+  &>.form-control {
+    padding: 6px 12px 6px 30px;
+    color: @color-light;
+  }
+}
+
+.form-control-feedback {
+  left: 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+
+  p {
+    font-size: 12px;
+    line-height: normal;
+    color: @color-light;
+    margin: 0;
+  }
+}
+
+.form-horizontal .control-label {
+  font-size: 12px;
+  padding-top: 0;
+}
+
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  .button {
+
+    background: url("../../../assets/images/icons/upload.png") no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 27px;
+    height: 27px;
+  }
+
+  input {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.01;
+    opacity: 0.01;
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-horizontal p {
+    text-align: left;
+  }
+}

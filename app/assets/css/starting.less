@@ -1,0 +1,29 @@
+/**
+* Starting styles
+**/
+
+@color-primary: #3575b9;
+@color-default: #333;
+@color-light: #818181;
+@color-success: #79c87f;
+
+@font-sans: "Open Sans", sans-serif;
+
+body {
+  font-family: @font-sans;
+}
+
+p {
+  color: @color-light;
+  line-height: 24px;
+
+  &.primary {
+    color: @color-primary;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,149 @@
+/**
+* Ourwork styles
+**/
+
+.ourwork {
+  position: relative;
+  padding: 80px 0;
+  min-height: 400px;
+  background: url(../../../assets/images/ourwork/ourwork-bg.jpg) no-repeat;
+  background-size: cover;
+
+  .ourwork-block {
+    position: relative;
+  }
+
+  .ourwork-social {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 191px;
+    background: url(../../../assets/images/icons/socials.png) no-repeat;
+
+    &:after {
+      content: url(../../../assets/images/icons/small-arrow.png);
+      position: absolute;
+      top: 50%;
+      left: 225px;
+      padding-right: 35px;
+      margin-top: -16px;
+      float: right;
+    }
+  }
+
+  .ourwork-man {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 171px;
+    height: 181px;
+    background: url(../../../assets/images/icons/man.png) no-repeat;
+
+    &:before {
+      content: url(../../../assets/images/icons/small-arrow.png);
+      position: absolute;
+      top: 50%;
+      right: 225px;
+      padding-left: 35px;
+      margin-top: -11px;
+      float: right;
+    }
+  }
+
+  .ourwork-block_info {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 45%;
+    margin-top: 33px;
+    padding: 35px 13px;
+    border: 1px solid rgba(127,127,127,.6);
+    background-color: rgba(255,255,255,.5);
+
+    .ourwork-block_txt {
+      flex: 1;
+      font-size: 18px;
+      color: #405069;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 50px;
+    }
+  }
+
+  .ourwork-slogan {
+    margin-top: 60px;
+    text-align: center;
+    line-height: 24px;
+    color: @color-default;
+  }
+
+  .ourwork-reg {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -85.5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ourwork {
+    .ourwork-social{
+      &:after {
+        left: 205px;
+      }
+    }
+
+    .ourwork-man{
+      &:before {
+        right: 205px;
+      }
+    }
+    .ourwork-block_info{
+      &:nth-child(odd) {
+        margin-right: 40px;
+      }
+
+      .ourwork-block_txt {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .ourwork {
+    .ourwork-block_info {
+      margin: 0 0 10px 0;
+      width: 100%;
+    }
+    .ourwork-social{
+      &:after {
+        left: 205px;
+      }
+    }
+
+    .ourwork-man{
+      &:before {
+        right: 205px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ourwork {
+    .ourwork-block_info {
+      margin: 0 0 10px 0 !important;
+      width: 100%;
+    }
+    .ourwork-social,
+    .ourwork-man {
+      display: none;
+    }
+  }
+}

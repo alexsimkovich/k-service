@@ -1,0 +1,132 @@
+/**
+* Personal cabinet styles
+**/
+
+.pc-block {
+
+  .pc-menu {
+    margin-bottom: 20px;
+
+    .pc-menu_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .pc-menu_li {
+        position: relative;
+        float: left;
+        width: 100%;
+
+        a {
+          display: block;
+          color: @color-light;
+          border-top: 1px solid #e8edf2;
+          border-left: 1px solid #e8edf2;
+          border-right: 1px solid #e8edf2;
+
+
+          span {
+            display: inline-block;
+            width: 52px;
+            padding: 15px 20px;
+            margin-right: 20px;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+
+            i {
+              color: #6c7480;
+            }
+          }
+        }
+
+        &:hover,
+        &.active {
+          &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -9px;
+            margin-top: -26.5px;
+            width: 0; height: 0;
+            border-left: 10px solid #e8edf2;
+            border-top: 26.5px solid transparent;
+            border-bottom: 26.5px solid transparent;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            margin-top: -25.5px;
+            width: 0; height: 0;
+            border-left: 9px solid #fff;
+            border-top: 25.5px solid transparent;
+            border-bottom: 25.5px solid transparent;
+          }
+          a {
+            text-decoration: none;
+
+            span {
+              background-color: @color-primary;
+
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+        
+        &:last-child {
+          a {
+            border-bottom: 1px solid #e8edf2;
+          }
+        }
+      }
+    }
+  }
+
+  .userbox-info {
+    margin-bottom: 20px;
+
+    .userbox-ava {
+      position: relative;
+      width: 218px;
+      padding: 12px;
+      border: 1px solid #eaeaea;
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #eaeaea;
+      }
+    }
+
+    .userbox-data {
+      position: relative;
+      padding: 20px 0 0 0;
+    }
+
+    .edit-form {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  
+  .balance-button {
+    margin: 30px 0;
+  }
+
+  .rss {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .userbox-ava {
+    margin: 10px auto;
+  }
+}
