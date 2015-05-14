@@ -9,6 +9,21 @@
 
 @font-sans: "Open Sans", sans-serif;
 
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -191px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 191px;
+  }
+}
+
 body {
   font-family: @font-sans;
 }

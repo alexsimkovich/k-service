@@ -1,10 +1,10 @@
-kService.controller('SearchVkInfoController',['$scope','$http', '$routeParams', function($scope, $http, $routeParams){
-
-    var str = "смартфон, мобильный телефон, телефон";
-    var url = 'https://api.vk.com/method/newsfeed.search?q='+ str +'&extended=1&count=30&callback=JSON_CALLBACK';
-    $http.jsonp(url).success(function (response) {
-        console.log(url);
+kService.controller('SearchVkInfoController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+    /*$http.get('/kservice_test').success(function (response) {
+        console.log("I got the data i requested");
         console.log(response);
+        $scope.newsfeed = response;
     });
-
+    $scope.addData = function(){
+      console.log("Hello");
+    };*/
 }]);
